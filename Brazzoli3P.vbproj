@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E71D3879-D490-4FEE-A24E-FAB75AFD6886}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>Brazzoli3P</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <OptionInfer>On</OptionInfer>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DefineConstants>DEBUG=1</DefineConstants>
+    <NoWarn>42030,42104,42108,42109,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>Full</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DefineConstants>
+    </DefineConstants>
+    <NoWarn>42030,42104,42108,42109,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <DebugSymbols>true</DebugSymbols>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="MimicControls" />
+    <Import Include="MimicControls.Design" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.ComponentModel" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Globalization.CultureInfo" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\Add Tank\AT.vb" />
+    <Compile Include="Commands\Add Tank\RC.vb" />
+    <Compile Include="Commands\Machine functions\Draining\PD.vb" />
+    <Compile Include="Commands\Machine functions\Rinsing\RP.vb" />
+    <Compile Include="Commands\Production reports\BO.vb" />
+    <Compile Include="Commands\Production reports\BR.vb" />
+    <Compile Include="Commands\Production reports\BS.vb" />
+    <Compile Include="Commands\Production reports\ET.vb" />
+    <Compile Include="Commands\Setup functions\WS.vb" />
+    <Compile Include="Commands\Setup functions\DS.vb" />
+    <Compile Include="Common\BlendControl.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="notes.vb" />
+    <Compile Include="Commands\Add Tank\AP.vb" />
+    <Compile Include="Commands\Add Tank\AD.vb" />
+    <Compile Include="Commands\Add Tank\AF.vb" />
+    <Compile Include="Commands\Machine functions\Draining\DR.vb" />
+    <Compile Include="Commands\Machine functions\Filling\FI.vb" />
+    <Compile Include="Commands\Machine functions\Rinsing\RI.vb" />
+    <Compile Include="Commands\Machine functions\Holding\TM.vb" />
+    <Compile Include="Commands\Operator functions\SA.vb" />
+    <Compile Include="Commands\Operator functions\LD.vb" />
+    <Compile Include="Commands\Operator functions\UL.vb" />
+    <Compile Include="Commands\Setup functions\BW.vb" />
+    <Compile Include="Commands\Setup functions\RS.vb" />
+    <Compile Include="Commands\Setup functions\FP.vb" />
+    <Compile Include="Commands\Setup functions\LR.vb" />
+    <Compile Include="Commands\Setup functions\VV.vb" />
+    <Compile Include="Commands\Setup functions\VL.vb" />
+    <Compile Include="Commands\Temperature control\HE.vb" />
+    <Compile Include="Commands\Temperature control\TP.vb" />
+    <Compile Include="Commands\Temperature control\WT.vb" />
+    <Compile Include="Commands\Machine functions\misc\PR.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Temperature control\CO.vb" />
+    <Compile Include="Common\Flowmeter.vb" />
+    <Compile Include="Common\PumpAndReel.vb" />
+    <Compile Include="Common\Safety.vb" />
+    <Compile Include="Common\Support.vb" />
+    <Compile Include="Utilities\Utilities.Sql.vb" />
+    <Compile Include="ControlCode\ControlCode.Status.vb" />
+    <Compile Include="ControlCode\ControlCode.Utilities.vb" />
+    <Compile Include="ControlCode\ControlCode.DrawScreen.vb" />
+    <Compile Include="ControlCode\ControlCode.Delays.vb" />
+    <Compile Include="Mimic\Mimic.Designer.vb">
+      <DependentUpon>Mimic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mimic\Mimic.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mimic\MimicControls.vb" />
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Common\TemperatureControl.vb" />
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="Control.vb" />
+    <Compile Include="ControlCode\ControlCode.Alarms.vb" />
+    <Compile Include="ControlCode\ControlCode.Commands.vb" />
+    <Compile Include="ControlCode\ControlCode.Variables.vb" />
+    <Compile Include="ControlCode\ControlCode.Parameters.vb" />
+    <Compile Include="ControlCode\ControlCode.vb" />
+    <Compile Include="Enums.vb" />
+    <Compile Include="IO.vb" />
+    <Compile Include="Modbus.vb" />
+    <Compile Include="Ports.vb" />
+    <Compile Include="Utilities\Utilities.Log.vb" />
+    <Compile Include="Utilities\Utilities.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mimic\Mimic.resx">
+      <DependentUpon>Mimic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mimic Drawings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ValveHorizontalWithFill.png" />
+    <Content Include="Resources\ValveHorizontalWithFillOn.png" />
+    <Content Include="Resources\ValveVerticalWithFill.png" />
+    <Content Include="Resources\ValveVerticalWithFillOn.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
