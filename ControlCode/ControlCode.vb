@@ -384,14 +384,14 @@ Public Class ControlCode : Inherits MarshalByRefObject
     IO.CoolWaterReturn = NHalt AndAlso TemperatureControl.IsCooling
     IO.HXDrain = NStop AndAlso Not TemperatureControl.IsHeating AndAlso Not TemperatureControl.IsCooling
     IO.MainPumpStart = NStop AndAlso IO.PumpInAutoSw AndAlso PumpAndReel.IsPumpOn
-    IO.Reel1Forward = NStop AndAlso PumpAndReel.IsReelForward(1) AndAlso IO.ReelForwardSwitch
-    IO.Reel1Reverse = NStop AndAlso PumpAndReel.IsReelReverse(1) AndAlso IO.ReelReverseSwitch
-    IO.Reel2Forward = NStop AndAlso PumpAndReel.IsReelForward(2) AndAlso IO.ReelForwardSwitch
-    IO.Reel2Reverse = NStop AndAlso PumpAndReel.IsReelReverse(2) AndAlso IO.ReelReverseSwitch
+    IO.Reel1Forward = NStop AndAlso PumpAndReel.IsReelForward(1) AndAlso IO.ReelForwardSwitch AndAlso IO.Reel1EnableSwitch
+    IO.Reel1Reverse = NStop AndAlso PumpAndReel.IsReelReverse(1) AndAlso IO.ReelReverseSwitch AndAlso IO.Reel1EnableSwitch
+    IO.Reel2Forward = NStop AndAlso PumpAndReel.IsReelForward(2) AndAlso IO.ReelForwardSwitch AndAlso IO.Reel2EnableSwitch
+    IO.Reel2Reverse = NStop AndAlso PumpAndReel.IsReelReverse(2) AndAlso IO.ReelReverseSwitch AndAlso IO.Reel2EnableSwitch
 
-    'card 3
-    IO.Reel3Forward = NStop AndAlso PumpAndReel.IsReelForward(3) AndAlso IO.ReelForwardSwitch
-    IO.Reel3Reverse = NStop AndAlso PumpAndReel.IsReelReverse(3) AndAlso IO.ReelReverseSwitch
+    'card 3 
+    IO.Reel3Forward = NStop AndAlso PumpAndReel.IsReelForward(3) AndAlso IO.ReelForwardSwitch AndAlso IO.Reel3EnableSwitch
+    IO.Reel3Reverse = NStop AndAlso PumpAndReel.IsReelReverse(3) AndAlso IO.ReelReverseSwitch AndAlso IO.Reel3EnableSwitch
     IO.AddPumpStart = NStop AndAlso (AT.IsAddPump OrElse AD.IsAddPump OrElse RC.IOAddPump OrElse AddTransferRequest)
     IO.AddMixerStart = NStop AndAlso IO.AddMixerSw AndAlso Not AT.IsActive AndAlso Not AD.IsActive
     IO.AddPrepareLamp = (AP.IOPrepareLampSlow AndAlso SlowFlash) OrElse (AP.IOPrepareLampFast AndAlso FastFlash) _

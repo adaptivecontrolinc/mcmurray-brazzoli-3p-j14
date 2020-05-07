@@ -57,9 +57,9 @@ Public Class IO : Inherits MarshalByRefObject
   ' CARD #3
   <IO(IOType.Dinp, 33), Description("Manual fill pushbutton")> Public ManualFillPB As Boolean
   <IO(IOType.Dinp, 34), Description("Manual drain pushbutton")> Public ManualDrainPB As Boolean
-  <IO(IOType.Dinp, 35), Description("")> Public Dinp35 As Boolean
-  <IO(IOType.Dinp, 36), Description("")> Public Dinp36 As Boolean
-  <IO(IOType.Dinp, 37), Description("")> Public Dinp37 As Boolean
+  <IO(IOType.Dinp, 35), Description("")> Public Reel1EnableSwitch As Boolean
+  <IO(IOType.Dinp, 36), Description("")> Public Reel2EnableSwitch As Boolean
+  <IO(IOType.Dinp, 37), Description("")> Public Reel3EnableSwitch As Boolean
   <IO(IOType.Dinp, 38), Description("")> Public Dinp38 As Boolean
   <IO(IOType.Dinp, 39), Description("")> Public Dinp39 As Boolean
   <IO(IOType.Dinp, 40), Description("")> Public Dinp40 As Boolean
